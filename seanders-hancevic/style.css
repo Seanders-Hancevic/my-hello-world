@@ -1,0 +1,30 @@
+.hello {
+width: 200px;
+height: 200px;
+color: white;
+background-color: black;
+-webkit-animation-name: helloWorld; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+animation-name: helloWorld;
+animation-duration: 7s;
+text-align: center;
+}
+
+@-webkit-keyframes helloWorld {
+    from {background-color: black;}
+    to {background-color: purple;}
+}
+
+@keyframes helloWorld {
+    from {background-color:black;}
+    to {background-color: purple;}
+}
+
+#textbounce {
+    -webkit-animation: moving 7s;
+    animation: moving 7s;
+}
+@keyframes moving {
+    from {transform: translateY(0px);}
+    to {transform: translateY(150px);}
+}
